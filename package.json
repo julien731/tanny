@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "name": "vipada-liabeuf",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/d737f879-18a3-4410-8a6d-9bb8108c0d6d/deploy-status)](https://app.netlify.com/sites/splendorous-stardust-554f70/deploys)",
+  "version": "2.0.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass assets/sass/ -o assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien731/tanny.git"
+  },
+  "author": "Julien Liabeuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julien731/tanny/issues"
+  },
+  "homepage": "https://github.com/julien731/tanny#readme"
+}
