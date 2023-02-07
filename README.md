@@ -1,5 +1,7 @@
 # Vipada's Personal Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d737f879-18a3-4410-8a6d-9bb8108c0d6d/deploy-status)](https://app.netlify.com/sites/splendorous-stardust-554f70/deploys)
+
 This is Vipada's personal website and online resume.
 
 ## Styleguide
