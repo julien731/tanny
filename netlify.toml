@@ -1,0 +1,4 @@
+[build]
+
+  # Default build command.
+  command = "npm run scss"
