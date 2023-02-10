@@ -2,3 +2,7 @@
 
   # Default build command.
   command = "npm run scss"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  package = "@netlify/plugin-lighthouse"
