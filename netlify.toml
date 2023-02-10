@@ -8,4 +8,4 @@
   package = "@netlify/plugin-lighthouse"
 
 [[context.production.plugins]]
-  package = "./plugins/netlify-purge-cloudflare-on-deploy"
+  package = "netlify-purge-cloudflare-on-deploy"
