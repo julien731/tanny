@@ -2,3 +2,10 @@
 
   # Default build command.
   command = "npm run scss"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  package = "@netlify/plugin-lighthouse"
+
+[[context.production.plugins]]
+  package = "./plugins/netlify-purge-cloudflare-on-deploy"
