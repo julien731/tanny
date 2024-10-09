@@ -1,7 +1,9 @@
 [build]
-
   # Default build command.
   command = "npm run scss"
+
+[build.processing]
+  skip_processing = false
 
 [build.processing.css]
   minify = true
