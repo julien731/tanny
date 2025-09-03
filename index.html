@@ -48,8 +48,34 @@
 				<!-- Section -->
 				<section id="first">
 					<header>
+						<h2>CEO & Founder, Thailand</h2>
+						<p><strong><a href="https://northworks.asia">Northworks</a></strong><br/>January 2025 &mdash; Present<br/>(<span class="duration-output"></span>)</p>
+					</header>
+					<div class="content">
+						<p>I founded <a href="https://northworks.asia">Northworks</a> after spending over a decade scaling companies across Asia Pacific.</p>
+						<p>Along the way, I saw a recurring problem: businesses that hit the 100+ employee mark often stalled. Not because of weak vision or product, but because their operational backbone couldn’t keep up. Processes broke down, people management became reactive, and momentum was lost just when it mattered most.</p>
+						<p>Northworks was created to solve exactly that problem. <strong>It’s built on the belief that strong execution, precise operations, and a culture of accountability are what allow ambition to scale.</strong></p>
+						<p>For me, it’s not about consulting from the sidelines. It’s about stepping in as a true partner, bringing structure and clarity so that growing companies can keep moving forward with confidence.</p>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header>
+						<h2>Head of People and Culture (Interim), Thailand</h2>
+						<p><strong>Nimble</strong><br/>January 2025 &mdash; Present<br/>(<span class="duration-output"></span>)</p>
+					</header>
+					<div class="content">
+						<p>As the Interim Head of People & Culture for my client, Nimble, <strong>I lead both Office Operations and People Operations.</strong> My core responsibility is to champion Nimble's values and culture, cultivating an inclusive and engaging environment that truly reflects their mission and vision.</p>
+						<p><strong>I collaborate closely with Nimble's leadership to align HR strategies with business goals,</strong> providing insights and recommendations that drive performance and employee engagement. I design and execute comprehensive programs that enhance the entire employee experience, ensuring all team members feel supported and valued.</p>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header>
 						<h2>Site Director, Thailand</h2>
-						<p><strong>TTEC</strong><br/>January 2024 &mdash; Present<br/>(10 months)</p>
+						<p><strong>TTEC</strong><br/>January 2024 &mdash; December 2024<br/>(1 year)</p>
 					</header>
 					<div class="content">
 						<p>TTEC headhunted me to build the brand new Thailand site.</p>
@@ -288,6 +314,39 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			function getDurationSince(startYear, startMonth) {
+				const start = new Date(startYear, startMonth - 1); // JavaScript months are 0-based
+				const now = new Date();
+
+				let totalMonths = (now.getFullYear() - start.getFullYear()) * 12;
+				totalMonths += now.getMonth() - start.getMonth();
+
+				if (now.getDate() < start.getDate()) {
+				totalMonths--;
+				}
+
+				totalMonths = Math.max(0, totalMonths);
+
+				const years = Math.floor(totalMonths / 12);
+				const months = totalMonths % 12;
+
+				if (years > 0) {
+				return `${years} year${years > 1 ? 's' : ''}${months > 0 ? `, ${months} month${months > 1 ? 's' : ''}` : ''}`;
+				} else {
+				return `${months} month${months !== 1 ? 's' : ''}`;
+				}
+			}
+
+			// Set your start date here
+			const output = getDurationSince(2025, 1); // January 2025
+
+			// Update all elements with the class "duration-output"
+			document.querySelectorAll('.duration-output').forEach(el => {
+				el.textContent = output;
+			});
+			</script>
 
 	</body>
 </html>
